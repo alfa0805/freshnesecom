@@ -101,6 +101,30 @@
             outline:none;
         }
     }
+    &__wrap{
+        padding: 15px 0px;
+        &-list{
+            display: flex;
+            align-items: center;
+            gap:7px;
+        }
+        &-item{
+            font-family: Open Sans;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16.34px;
+            text-align: left;
+            color:$darkgrey;
+        }
+        &-text{
+            font-family: Open Sans;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16.34px;
+            text-align: left;
+            color:$blokc;
+        }
+    }
 }
 @media screen and (max-width:800px){
     .header{
@@ -185,6 +209,20 @@
 }
 @media screen and (max-width:414px){
     .header{
+        &__menyu{
+            &-box{
+                gap:7px;
+            }
+            &-list{
+                gap:10px;
+            }
+            &-link{
+                font-size:10px;
+            }
+            &-href{
+                font-size:10px;
+            }
+        }
         &__main{
             &-input{
                 display:none;
@@ -196,6 +234,17 @@
             }
             &-block{
                 width: 15%;
+            }
+        }
+        &__wrap{
+            &-list{
+                gap: 5px;
+            }
+            &-item{
+                font-size:11px;
+            }
+            &-text{
+                font-size:11px;
             }
         }
     }
